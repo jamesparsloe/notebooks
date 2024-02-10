@@ -6,4 +6,12 @@ These notebooks are self-contained (apart from third-party packages/dependencies
 
 | Notebook | Description |
 |----------|-------------|
-| [Mamba MNIST](./mamba-mnist.ipynb) | Applying Mamba to conditional MNIST generation |
+| [Mamba MNIST](./mamba-mnist.ipynb) [Colab](https://colab.research.google.com/github/) | Applying Mamba to conditional MNIST generation |
+
+## Colab
+
+Colab doesn't seem to like Triton out of the box. The suggestion from [here](https://github.com/pytorch/pytorch/issues/107960) is to execute
+
+```python
+!ldconfig /usr/lib64-nvidia
+```
